@@ -1,2 +1,6 @@
 # Custom Shaders Scene 
- CMP301 Graphics Programming Coursework
+CMP301 Graphics Programming Coursework
+
+PLEASE NOTE: THIS IS NOT A COMPILABLE PROJECT! This code is here for demonstration purposes only: due to the framework abertay uni provided
+to make this coursework, the full project is too large to upload to a single github repo. This repo contains all the code I wrote myself,
+for you to view at your pleasure, plus a build of the final version of the project which I handed in for this module.
