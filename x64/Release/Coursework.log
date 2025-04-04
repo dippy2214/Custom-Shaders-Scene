@@ -1,0 +1,3 @@
+﻿  failed to open file: C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\bloomFinal_ps.hlsl
+  compilation failed; no code produced
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1847,5): error MSB6006: "fxc.exe" exited with code 1.

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\x64\Debug\Coursework.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\bloomFinal_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\bloomFinal_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\bloomHighlight_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\bloomHighlight_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\depthHeightmap_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\pointDepthHeight_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\pointDepth_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\pointDepth_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\depth_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\depth_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\horizontalBlur_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\horizontalBlur_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\light_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\light_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\manipulation_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\manipulation_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\shadow_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\shadow_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\tessellation_ds.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\tessellation_hs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\tessellation_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\tessellation_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\texture_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\texture_vs.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\verticalBlur_ps.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\joshu\Desktop\Uni work\CMP301\Coursework\cmp301_coursework-dippy2214\Coursework\Coursework\verticalBlur_vs.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

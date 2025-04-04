@@ -1,0 +1,25 @@
+newmtl lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd log_obj_lambert4SG_BaseColor.png
+map_Ka log_obj_lambert4SG_Height.png
+bump log_obj_lambert4SG_Normal.png -bm 1
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd log_obj_lambert5SG_BaseColor.png
+map_Ka log_obj_lambert5SG_Height.png
+bump log_obj_lambert5SG_Normal.png -bm 1
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s 0.2 0.2 rough_ground.jpg
+Ni 1.00
