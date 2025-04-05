@@ -1,4 +1,4 @@
-# Custom Shaders Scene 
+# Custom Shaders Scene 🖥
 
 PLEASE NOTE: THIS IS NOT A COMPLETE BUILDABLE PROJECT! 
 
@@ -12,3 +12,5 @@ purposes). Learning about how shaders are made was very interesting to make, off
 and working with the DirectX shader pipeline. I really enjoyed working on what felt like a lower level compared to the 
 rest of my uni projects so far, and even though this was the hardest module of my first term in third year (it wasn't 
 even close), I am pleased to say I had an excellent time.
+
+The Development Process 🛠
