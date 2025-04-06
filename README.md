@@ -43,4 +43,32 @@ of this write up I will be calling each of the segments 'shaders' and the full s
 
 The above image shows off the DirectX shader pipeline and each of the steps I could interact with. The only truly essential
 steps were vertex and pixel shaders, since the rest could be automatically filled in to do nothing, but every step you see
-that can take an input other than the previous shader were ones which I could edit myself.
+that can take an input other than the previous shader were ones which I could edit myself. It is also worth noting that I
+wrote these in HLSL, a high level language designed for making shaders, rather than the C++ that the rest of the program was
+written in. I actually liked some of the features of HLSL a lot, especially the way it handled floats. However, I personally
+think that allowing you to cast a float4 to a float and making the float the x value of the float4 is absolutely insane and 
+should be banned (this caused me a lot of pain when I was being careless 😅).
+
+### 💡 Lighting
+Making the lighting was an interesting task. This mostly happened in the pixel shader, to make sure that the visual effects 
+looked detailed and nice. Making lighting work on a per vertex basis can look nice for more stylised projects, but part of
+this being a uni project meant that I needed to meet certain requirements, and doing this in a more realistic way was one of
+them.
+
+I started out with a simple directional light, which is a light that constantly shines on everything in the scene from a 
+specific direction. This lighting was calculated by comparing the angle of the light to the pixel and the angle of the pixel
+to the camera, which can be calculated with the normal. Normals are an essential part of lighting, which it important when you 
+start doing vector manipulation in the vertex shader, but I will talk about that more with heightmaps.
+
+![image](https://github.com/user-attachments/assets/18b41f16-c990-4f50-80de-0285c9be97c0)
+
+
+
+
+
+
+
+
+
+
+
