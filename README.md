@@ -155,6 +155,15 @@ number of verticies on these edges in the hull shader to the LOD being blended w
 algorithm was something I couldn't figure out before my deadline.
 
 ### 🎞 Post Processing
+To create post processing effects, we render the whole scene to a texture and then apply a new shader to just that texture. 
+There is no longer access to the specific objects we are placing in the scene, but only the final image and all the pixels in
+it. 
+
+I chose to implement a bloom effect to my scene, which aims to emulate the artifacting of real world cameras, highlighting 
+bright areas to create something that looks like a brilliant light which overwhelms the eye. To do this there are a few steps:
+- Pick out and isolate the brightest parts of the image, rendering them onto a texture as white on black
+- Blur the new brightness texture to make the edges fuzzy
+- Additively apply this texture to the final scene
 
 
 
