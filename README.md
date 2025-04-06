@@ -15,4 +15,4 @@ coursework, the full project is too large to upload to a single github repo (and
 
 ## The Development Process 🛠
 
-### ➡ Directly Into It
+### 🖥 A Graphical Overhaul
