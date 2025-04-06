@@ -49,6 +49,12 @@ written in. I actually liked some of the features of HLSL a lot, especially the 
 think that allowing you to cast a float4 to a float and making the float the x value of the float4 is absolutely insane and 
 should be banned (this caused me a lot of pain when I was being careless 😅).
 
+When making a shader, all data you want the shader to have needs to be stored and passed through via buffers. This is because
+the shaders live on the GPU, so data needs to be passed there somehow. This means setting up loads of constant buffers, and 
+ensuring that the buffers memory layout matches up on both sides (a task LSPs are not equiped to help with). The most common
+type of buffer is a constant buffer, for passing through constants, but there are also separate pre made buffers for textures
+and matrices which are quite useful.
+
 ### 💡 Lighting And Shadows
 Making the lighting was an interesting task. This mostly happened in the pixel shader, to make sure that the visual effects 
 looked detailed and nice. Making lighting work on a per vertex basis can look nice for more stylised projects, but part of
@@ -82,6 +88,8 @@ known formulas to limit the cone they shine in applied on top. There is a lot yo
 external cones, but I don't want to dwell on these too long as it is mostly known formulas which I didn't work out myself. The 
 specular highlight was also built upon to limit the cone which it would function in.
 
+#### 🕶 Shadows
+Shadows require a different set of techniques
 
 
 
