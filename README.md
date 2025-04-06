@@ -29,3 +29,6 @@ The features that ended up in the final project were as follows:
 - Tessellation with different LODs based on distance to the camera
 - A bloom post processing effect
 - A 3D model showing off lighting shadows (I did not make the model loader)
+
+These features presented many interesting challenges, and quite a few features I struggled with (such as a shader based 
+minimap) didn't make it to the final project.
