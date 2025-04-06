@@ -132,7 +132,29 @@ depth maps which would apply the same vertex manipulation in the depth pass. Wor
 admittedly take me some time, but we got there in the end.
 
 ### 📐 Tessellation
-Tessellation is the process of breaking down a shape into a series of smaller shapes. 
+Tessellation is the process of breaking down a shape into multiple smaller shapes. This process is automated by people much 
+smarter than I in the tessellation shader, but by using the hull and domain shader we can control how much this process takes
+places. I decided to tessellate my heightmap terrain, and to start I just tried to apply a universal tessellation through the
+hull shader. This required some major refactors, such as a lot of vertex manipulation now being done in the domain shader. 
+This is because the tessellation process creates new vertices, and if we want these to be manipulated like the rest of them 
+it is important to apply these changes afterwards, to all the new vertices.
+
+This is all well and good, but tessellation is most commonly used to provide different levels of details. Games want to be
+efficient while looking as pretty as possible, and tessellation offers us a way to change the detail in a single object that
+doesn't need to be changed. Using this, we can tessellate things close to the player more aggressively - and things further 
+away less aggressively. This keeps things close to the player looking nice and detailed, while stuff too far away to see 
+is cut down on to be computationally efficient. 
+
+In applying this I encountered one of the hardest to solve bugs in this project, and one that I didn't end up solving in the 
+time I had for this project, despite some promising looking books on DirectX 11 techniques. My tessellated terrain had seams 
+at the edge of the different LOD areas. This is a result of a mismatch in the number of triangles on each edge, causing 
+small holes to emerge on the edges where one edge has a straight line and the other has more detailed dips or bumps in terrain.
+
+I believe the solution to this program lies in an algorithm to figure out which edges are being tessellated and matching the
+number of verticies on these edges in the hull shader to the LOD being blended with, but the specifics of how to create this
+algorithm was something I couldn't figure out before my deadline.
+
+### 🎞 Post Processing
 
 
 
