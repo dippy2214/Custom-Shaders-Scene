@@ -59,7 +59,9 @@ and matrices which are quite useful.
 Making the lighting was an interesting task. This mostly happened in the pixel shader, to make sure that the visual effects 
 looked detailed and nice. Making lighting work on a per vertex basis can look nice for more stylised projects, but part of
 this being a uni project meant that I needed to meet certain requirements, and doing this in a more realistic way was one of
-them.
+them. Lighting in it's simplest form is ambient light, which is a flat multiplier on the brightness of all pixels in the
+scene, regardless of location. This is often used as a background effect so nothing ever gets too dark, but there is far more
+to lighting than just this.
 
 #### 🧭 Directional Light
 I started out with a simple directional light, which is a light that constantly shines on everything in the scene from a 
@@ -89,7 +91,15 @@ external cones, but I don't want to dwell on these too long as it is mostly know
 specular highlight was also built upon to limit the cone which it would function in.
 
 #### 🕶 Shadows
-Shadows require a different set of techniques
+Shadows require a different set of techniques, but also need to add to lighting. Essentially, every light in the scene needs to 
+have it's shadows calculated as well, and if we determine an object is in shadow for a particular light then we don't apply that
+light to it. To accomplish this, we make use of depth maps. 
+
+A depth map is a texture which we render before our main scene, in the depth pass. This involves specific depth shaders designed
+to render a texture of the scene which adds to the brightness of the pixel based on how close an object is, with closer objects 
+being brighter. When we have this in our render of the main scene we can check the distances with the data from the shadow map to
+determine if a pixel is in shadow or not. It is worth noting that we need a whole new shadow map (or more, as we will see) for 
+each light in our scene, making this one of the more expensive calculations we can do.
 
 
 
