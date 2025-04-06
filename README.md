@@ -165,6 +165,8 @@ bright areas to create something that looks like a brilliant light which overwhe
 - Blur the new brightness texture to make the edges fuzzy
 - Additively apply this texture to the final scene
 
+In my case I used gaussian blur to blue the image, a technique which splits the blurring into horizontal and vertical passes.
+
 
 
 
