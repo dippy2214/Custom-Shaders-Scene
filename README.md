@@ -1,6 +1,6 @@
 # Custom Shaders Scene 🖥
 
-This project involved using C++ and HLSL to write a program which showed off custom shaders, build on top of a DirectX 3D
+This project involved using C++ and HLSL to write a program which showed off custom shaders, built on top of a DirectX 3D
 framework the university provided, which was intended to be a slice out of their own custom skateboard engine (for learning 
 purposes). Learning about how shaders are made was very interesting to make, offloading processing to the graphics card 
 and working with the DirectX shader pipeline. I really enjoyed working on what felt like a lower level compared to the 
