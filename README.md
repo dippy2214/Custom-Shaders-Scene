@@ -113,8 +113,26 @@ Spot lights actually return to a more simplistic solution this time - they are f
 back to one shadow map. This again works based off similar logic to point lights, although this time simplifying rather than 
 adding to it.
 
-### 🗺 Vertex Manipulation And Height Maps
+### 🗺 Vertex Shaders And Height Maps
+My main application of the vertex shader was for my height map. This is a technique which uses a texture to store height data of
+points. By extracting this data (and usually applying your own scale) you can shift the vertexes of a plane to create very 
+dynamic looking terrain. This is a useful technique for when you want to save on memory by not loading in a tonne of complex
+models or shapes, and makes it very easy to have good looking and complicated scenary. However, collisions and other parts of a
+game won't keep up without being directly told to.
 
+This not keeping up also applies to normals. It is important to calculate the correct normals whenever you manipulate vertices, 
+or all the fancy lighting will break. This calculation can be quite easily done through the same height data stored in the 
+heightmap which was used for manipulating the vertices, by taking samples close to the point and calculating the normal based 
+on the difference between them. The normal calculation can be done in the vertex or pixel shader, with the pixel shader 
+offering higher definition results in exchange for worse performance as the calculations are run over every pixel of the terrain
+rather than just each vertex.
+
+There is another downside though. Because the original shape is just a plane , I also needed a specialised depth shader for 
+depth maps which would apply the same vertex manipulation in the depth pass. Working out this was what the problem with did 
+admittedly take me some time, but we got there in the end.
+
+### 📐 Tessellation
+Tessellation is the process of breaking down a shape into a series of smaller shapes. 
 
 
 
