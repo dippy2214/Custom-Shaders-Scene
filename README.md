@@ -167,7 +167,12 @@ bright areas to create something that looks like a brilliant light which overwhe
 
 In my case I used gaussian blur to blue the image, a technique which splits the blurring into horizontal and vertical passes.
 
-
+🏁 Conclusion And Reflection
+This project was hard but very fun for me. I enjoyed thinking on a lower level about how things work and how images are put on
+the monitor like this. There is clearly a far greater depth to explore with this topic, and lots more I could have done even
+within this project. I didn't even make use of the compute shader stage, or fix my final issues with tessellation. The learning
+process was a lot of fun as well, and I hope to bring this kind of learning into my own research as I feel I gained a much more 
+complete depth of understanding like this.
 
 
 
