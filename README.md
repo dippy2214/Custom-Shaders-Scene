@@ -36,9 +36,11 @@ minimap) didn't make it to the final project.
 ### ❓ What Are Shaders
 Shaders are small programs which run on the GPU rather than the CPU, which can be used to make a variety of effects. There
 are many different parts to shaders which are run at different parts of the render pipeline. The render pipeline defines 
-exactly when each shader section is run. A single shader program is technically made up of each step, but for the purposes
-of this write up I will be calling each of the parts 'shaders' and the full shader a 'shader program'.
+exactly when each shader section is run. A single shader is technically made up of each individual step, but for the purposes 
+of this write up I will be calling each of the segments 'shaders' and the full shader a 'shader program'.
 
 ![shader pipeline](https://github.com/user-attachments/assets/43340ea9-ed24-427f-9b9b-7b0d76e2d5de)
 
-
+The above image shows off the DirectX shader pipeline and each of the steps I could interact with. The only truly essential
+steps were vertex and pixel shaders, since the rest could be automatically filled in to do nothing, but every step you see
+that can take an input were shaders which I could edit myself.
