@@ -39,6 +39,6 @@ are many different parts to shaders which are run at different parts of the rend
 exactly when each shader section is run. A single shader program is technically made up of each step, but for the purposes
 of this write up I will be calling each of the parts 'shaders' and the full shader a 'shader program'.
 
-![image](https://github.com/user-attachments/assets/43340ea9-ed24-427f-9b9b-7b0d76e2d5de)
+![shader pipeline](https://github.com/user-attachments/assets/43340ea9-ed24-427f-9b9b-7b0d76e2d5de)
 
 
