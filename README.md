@@ -16,3 +16,16 @@ coursework, the full project is too large to upload to a single github repo (and
 ## The Development Process 🛠
 
 ### 🖥 A Graphical Overhaul
+To begin with, I will say that this module was hard. Because we were using the university's framework it was difficult to 
+research the specific things we wanted, since often we couldn't find the specific ways to do stuff. This forced us down 
+the much more difficult and much more interesting path of researching the how-tos and working out the implementations 
+ourselves from scratch. A lot of my classmates struggled with this shift, but I think that my experience with the wiimote
+project really aided me when adapting to this shift in how the university expected us to learn. I felt quite good 
+throughout this module, keeping on top of learning and getting the hang of implementing all the new features we were taught.
+
+The features that ended up in the final project were as follows:
+- A lighting shader with support for shadows and specular highlights which includes point, directional and spot lighting
+- Vertex manipulation with a heightmap + normal map shader for the terrain.
+- Tessellation with different LODs based on distance to the camera
+- A bloom post processing effect
+- A 3D model showing off lighting shadows (I did not make the model loader)
