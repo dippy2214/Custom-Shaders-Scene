@@ -101,6 +101,21 @@ being brighter. When we have this in our render of the main scene we can check t
 determine if a pixel is in shadow or not. It is worth noting that we need a whole new shadow map (or more, as we will see) for 
 each light in our scene, making this one of the more expensive calculations we can do.
 
+This simple logic applies pretty nicely to our directional light, which shines light one way onto the scene. However, there are 
+issues when we think about point lights. The depth map is a 2D  texture, how can it store 3D data?. Technically, it can't,
+although you can try to be efficient by using only one of the r,g,b or a channels in a color to store each maps data. For point 
+lights the conventional technique is to create a cube map, which I think is best thought of as a cube of shadow maps surrounding
+the light. This comes with some nice tricks, like each points in the scene's (x,y,z) coordinate in relation to the light being very 
+easy to translate to the cube - the largest value determines which axis, positive or negative gives you the exact face, and the
+remaining two when the vector is normalised will immediately become the UV values.
+
+Spot lights actually return to a more simplistic solution this time - they are focused into one direction, and as such we can go
+back to one shadow map. This again works based off similar logic to point lights, although this time simplifying rather than 
+adding to it.
+
+### 🗺 Vertex Manipulation And Height Maps
+
+
 
 
 
