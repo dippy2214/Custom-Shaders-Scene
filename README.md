@@ -43,4 +43,4 @@ of this write up I will be calling each of the segments 'shaders' and the full s
 
 The above image shows off the DirectX shader pipeline and each of the steps I could interact with. The only truly essential
 steps were vertex and pixel shaders, since the rest could be automatically filled in to do nothing, but every step you see
-that can take an input were shaders which I could edit myself.
+that can take an input other than the previous shader were ones which I could edit myself.
