@@ -49,19 +49,38 @@ written in. I actually liked some of the features of HLSL a lot, especially the 
 think that allowing you to cast a float4 to a float and making the float the x value of the float4 is absolutely insane and 
 should be banned (this caused me a lot of pain when I was being careless 😅).
 
-### 💡 Lighting
+### 💡 Lighting And Shadows
 Making the lighting was an interesting task. This mostly happened in the pixel shader, to make sure that the visual effects 
 looked detailed and nice. Making lighting work on a per vertex basis can look nice for more stylised projects, but part of
 this being a uni project meant that I needed to meet certain requirements, and doing this in a more realistic way was one of
 them.
 
+#### 🧭 Directional Light
 I started out with a simple directional light, which is a light that constantly shines on everything in the scene from a 
-specific direction. This lighting was calculated by comparing the angle of the light to the pixel and the angle of the pixel
-to the camera, which can be calculated with the normal. Normals are an essential part of lighting, which it important when you 
-start doing vector manipulation in the vertex shader, but I will talk about that more with heightmaps.
+specific direction. This lighting was calculated by comparing the angle of the light to the pixel and normal of that pixel. 
+Normals are an essential part of lighting, which it important when you start doing vector manipulation in the vertex shader, 
+but I will talk about that more with heightmaps.
 
 ![image](https://github.com/user-attachments/assets/18b41f16-c990-4f50-80de-0285c9be97c0)
 
+the angle between the light and normal is what determines the brightness, and the closer the angle is to 0 the brighter the
+lighting effect will be, while everything beyond 90 will havce no light and be left black. The lighting shaders change color
+by multiplying by a number between 0 and 1, meaning the original colors of the object are preserved.
+
+#### 👉 Point Light
+Point lights work on a very similar principle to directional light, but instead of the light coming from one specific direction
+it comes from one specific point in space. This doesn't actually require much change from directional lights until we get to
+shadows, but it is worth mentioning that we can start thinking about specular highlights now. 
+
+This is an effect designed to mimic the perfect reflection that can occur only when an object is at a specific angle between the 
+light and the viewer. For this effect I needed to perform a separate specular calculation to work out the half angle, which could 
+then be used to calculate a specular highlight - something that can be applied additively at the end of all lighting calculations.
+
+#### 🔦 Spot Light
+Spot lights are lights that shine only within a specific cone. They expand on the principles of point lighting, with their own
+known formulas to limit the cone they shine in applied on top. There is a lot you can tweak with these with the internal and
+external cones, but I don't want to dwell on these too long as it is mostly known formulas which I didn't work out myself. The 
+specular highlight was also built upon to limit the cone which it would function in.
 
 
 
